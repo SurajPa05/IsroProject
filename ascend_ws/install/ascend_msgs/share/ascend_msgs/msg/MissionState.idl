@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ascend_msgs/msg/MissionState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module ascend_msgs {
+  module msg {
+    module MissionState_Constants {
+      const uint8 IDLE = 0;
+      const uint8 SEEDING = 1;
+      const uint8 TAKEOFF = 2;
+      const uint8 SEARCHING = 3;
+      const uint8 TARGET_FOUND = 4;
+      const uint8 CAPTURING = 5;
+      const uint8 RETURNING = 6;
+      const uint8 DOCKING = 7;
+      const uint8 CHARGING = 8;
+      const uint8 DATA_TRANSFER = 9;
+      const uint8 VALIDATING = 10;
+      const uint8 SORTIE_COMPLETE = 11;
+      const uint8 LOW_BATTERY = 12;
+      const uint8 EMERGENCY = 13;
+    };
+    @verbatim (language="comment", text=
+      "Current phase of the ASCEND mission")
+    struct MissionState {
+      std_msgs::msg::Header header;
+
+      uint8 current_phase;
+
+      uint8 previous_phase;
+
+      int32 sortie_number;
+
+      int32 targets_found;
+
+      int32 targets_validated;
+
+      boolean last_validation_result;
+
+      string status_message;
+    };
+  };
+};

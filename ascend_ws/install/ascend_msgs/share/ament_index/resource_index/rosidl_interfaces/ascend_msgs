@@ -1,0 +1,8 @@
+msg/DockStatus.idl
+msg/DockStatus.msg
+msg/MissionState.idl
+msg/MissionState.msg
+msg/TargetDetection.idl
+msg/TargetDetection.msg
+msg/Telemetry.idl
+msg/Telemetry.msg

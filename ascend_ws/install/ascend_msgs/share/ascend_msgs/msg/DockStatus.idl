@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ascend_msgs/msg/DockStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module ascend_msgs {
+  module msg {
+    module DockStatus_Constants {
+      const uint8 COVER_OPEN = 0;
+      const uint8 COVER_CLOSED = 1;
+      const uint8 COVER_MOVING = 2;
+      const uint8 NOT_CHARGING = 0;
+      const uint8 CHARGING = 1;
+      const uint8 CHARGE_COMPLETE = 2;
+    };
+    @verbatim (language="comment", text=
+      "Status of the ground dock")
+    struct DockStatus {
+      std_msgs::msg::Header header;
+
+      uint8 cover_state;
+
+      uint8 charging_state;
+
+      float dock_battery_percentage;
+
+      float drone_battery_percentage;
+
+      boolean pogo_connected;
+
+      boolean data_transfer_active;
+    };
+  };
+};
